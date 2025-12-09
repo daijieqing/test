@@ -752,7 +752,7 @@ export const ModelManagement: React.FC = () => {
       return (
         <div className="space-y-3">
            <div className="flex justify-between items-center">
-             <span className="text-xs text-gray-500">文本值映射分数 (如 优秀 -> 10)</span>
+             <span className="text-xs text-gray-500">文本值映射分数 (如 优秀 -&gt; 10)</span>
              <button onClick={addMap} className="text-xs text-blue-600 flex items-center gap-1 hover:underline"><Icons.Plus size={12}/> 添加映射</button>
            </div>
            {mapping.map(m => (
@@ -823,7 +823,7 @@ export const ModelManagement: React.FC = () => {
       return (
         <div className="space-y-4">
            <div className="p-3 bg-gray-50 border border-gray-200 rounded text-sm font-mono text-gray-600">
-             触发条件: 指标值 ≥ {bonusTrigger}% -> 附加分
+             触发条件: 指标值 ≥ {bonusTrigger}% -&gt; 附加分
            </div>
            <div className="grid grid-cols-2 gap-4">
              <div>
