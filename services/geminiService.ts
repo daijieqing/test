@@ -1,7 +1,8 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { IndicatorType, DataSource } from '../types';
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+// 注意这里改成 import.meta.env.VITE_API_KEY
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY || '' });
 
 export const generateAIIndicators = async (projectContext: string): Promise<any[]> => {
   try {
